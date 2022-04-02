@@ -1,0 +1,208 @@
+/* source-sans-pro-regular - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/source-sans-pro-v19-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v19-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-600 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/source-sans-pro-v19-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v19-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* source-sans-pro-700 - latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/source-sans-pro-v19-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v19-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.header {
+  z-index: 10;
+}
+.header__input {
+  width: 224px;
+  font-size: 12px;
+  background-color: #F4F4F4;
+  border-radius: 8px;
+}
+
+.header__span {
+  font-size: 12px;
+}
+.telegram__screen {
+  margin-left:auto;
+}
+.left {
+  position: sticky;
+  z-index: 1;
+}
+.left__item {
+  width: 100%;
+  padding-left: 10px;
+}
+.bg-blue {
+  background-color: #4C91C7;
+}
+.left__item-right {
+  width: 100%;
+  padding-right: 8px;
+}
+.left__item-group {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.left__item-name {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 2px 0;
+}
+.left__item-message {
+  font-size: 13px;
+  line-height: 15px;
+}
+.left__item:nth-child(3) .left__item-message {
+  width: 100px;
+}
+.left__item-time {
+  position: relative;
+  font-size: 12px;
+  white-space: nowrap;
+  color:#999999;
+}
+.left__item:nth-child(3) .left__item-time::before {
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: 3px;
+  width: 18px;
+  height: 10px;
+  background-image: url("../img/tick.png");
+  content: "";
+}
+.left__item:nth-child(8) .left__item-time::before {
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  border-right: 1px solid #0AC034;
+  border-bottom: 1px solid #0AC034;
+  transform: rotate(45deg);
+  margin-right: 5px;
+  content: "";
+}
+
+.left__bottom-list {
+  max-width: 305px;
+  margin: 0;
+  margin-left: 12px;
+}
+
+.center__list {
+  width: 100%;
+}
+.center__item {
+  width: 100%;
+}
+.center__item-name {
+  font-size: 13px;
+  width: 100%;
+  color: #2481CC;
+}
+.center__item-name--time {
+  font-size: 12px;
+}
+.center__item-text {
+  font-size: 13px;
+  color: #060606;
+}
+.center__item-text--time {
+  font-size: 12px;
+}
+.center__item:nth-child(1) .center__item-text--time:before, .center__item:nth-child(3) .center__item-name--time:before, .center__item:nth-child(4) .center__item-name--time:before, .center__item:nth-child(5) .center__item-name--time:before, .center__item:nth-child(6) .center__item-name--time:before {
+  display: inline-block;
+  width: 17px;
+  height: 8px;
+  margin-right: 5px;
+  background-image: url("../img/read.png");
+  content: "";
+}
+.center__item-bottom {
+  border-left: 2px solid #2481CC;
+}
+.center__item-link {
+  font-size: 13px;
+  color: #2481CC
+}
+.center__bottom-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2481CC;
+}
+
+.center__bottom-subtitle {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.center__bottom-text {
+  font-size: 13px;
+}
+
+.center__item .center__bottom-text {
+  max-width: 260px;
+}
+
+.center__item-day {
+  font-size: 13px;
+}
+.center__write {
+  position: sticky;
+  bottom: 0;
+}
+.center__write-input {
+  font-size: 13px;
+}
+
+.bottom {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+}
+
+.right__top-text {
+  font-size: 13px;
+  color: #333333;
+}
+
+.right__top-link {
+  font-size: 13px;
+  color: #2481CC;
+}
+.right__text {
+  font-size: 13px;
+  color: #333333;
+}
+
+
+@media only screen and (max-width:1400px) {
+  .left__bottom-list {
+    max-width: 260px;
+  }
+}

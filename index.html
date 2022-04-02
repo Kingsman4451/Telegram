@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telegram</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <!-- ==================== HEADER ==================== -->
+    <div class="header pt-2 pb-2 border-bottom sticky-top bg-white ">
+      <div class="container">
+        <div class="header__inner row">
+          <div class="header__search col-xl-3 d-xl-block d-none">
+            <div class="d-flex justify-content-between">
+              <label class="header__label  form-label" for="search">
+                <input class="header__input form-control text-center lh-sm border-0 py-2" type="text" placeholder="search">
+              </label>
+              <a class="header__write-link" href="#">
+                <img class="header__write-img" src="./img/write.png" alt="write" width="38" height="29" srcset="./img/write.png 1x, ./img/write@2x.png 2x">
+              </a>
+            </div>
+          </div>
+          <div class="header__center d-flex justify-content-between col-12 col-md-8 col-lg-6 px-4">
+            <p class="header__text text-primary fw-bold m-0">Close</p>
+            <span class="header__span text-end align-self-end text-secondary">last seen 1 hour ago</span>
+          </div>
+          <div class="header__right d-none d-md-flex justify-content-end  col-4 col-lg-3">
+            <a class="header__right-link text-end mx-3 d-md-inline-block" href="#">
+              <img class="header__right-img" src="./img/search-fill.png" alt="search" width="14" height="14">
+            </a>
+            <a href="#" class="header__right-link text-decoration-none text-end d-md-inline-block">
+              <p class="header__right-text text-primary fw-bold">Edit</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ==================== /HEADER ==================== -->
+    <div class="main">
+      <div class="container">
+        <div class="telegram-screen row">
+          <!-- ==================== LEFT ==================== -->
+          <div class="left d-none d-xl-block col-3">
+            <ul class="left__list list-unstyled p-0 border-end">
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-1.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-1.jpg 1x, ./img/avatar-1@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Baikal Lake</p>
+                    <p class="left__item-name">Nasty Markelova</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold">😚❤️ Thanks!</p>
+                  </div>
+                  <div class="left__item-pin d-flex flex-column">
+                    <span class="left__item-time d-block">Wed</span>
+                    <img class="left__pin-img align-self-end" src="./img/pin.png" alt="pinned" width="20" height="20">
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-2.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-2.jpg 1x, ./img/avatar-2@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Moscow friends</p>
+                    <p class="left__item-name">Olga Staroverova</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold">Does anyone has kazan? …</p>
+                  </div>
+                  <div class="left__item-pin d-flex flex-column">
+                    <span class="left__item-time d-block">Wed</span>
+                    <img class="left__pin-img align-self-end" src="./img/pin.png" alt="pinned" width="20" height="20">
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 bg-blue d-flex justify-content-start align-center pt-2">
+                <img class="left__item-img rounded-circle" src="./img/avatar-3.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-3.jpg 1x, ./img/avatar-3@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group text-white m-0">Evgenia Markova</p>
+                    <p class="left__item-message m-0 text-white py-1">https://journal.tinkoff.ru/1ga-dalnyi-vostok/</p>
+                  </div>
+                  <div class="left__item-pin d-flex flex-column">
+                    <span class="left__item-time d-block text-white">9:35 AM</span>
+                    <img class="left__pin-img align-self-end" src="./img/pin-white.png" alt="pinned" width="20" height="20">
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-4.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-4.jpg 1x, ./img/avatar-4@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Framer Learning Chan…</p>
+                    <p class="left__item-message m-0 text-secondary py-3 pt-1">joined the channel</p>
+                  </div>
+                  <div class="left__item-pin d-flex flex-column">
+                    <span class="left__item-time d-block">11:58  AM</span>
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-5.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-5.jpg 1x, ./img/avatar-5@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Dribbble</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold py-3 pt-1">🌁 Photo</p>
+                  </div>
+                  <div class="left__item-pin">
+                    <span class="left__item-time d-block">10:22  AM</span>
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-6.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-6.jpg 1x, ./img/avatar-6@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Chat functional</p>
+                    <p class="left__item-name">Ksu Eremeeva</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold">2. If transfer will be immidea…</p>
+                  </div>
+                  <div class="left__item-pin">
+                    <span class="left__item-time d-block">Fri</span>
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-7.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-7.jpg 1x, ./img/avatar-7@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Ksusha Kasatkina</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold py-3 pt-1">Thaaaanks)</p>
+                  </div>
+                  <div class="left__item-pin">
+                    <span class="left__item-time d-block">Fri</span>
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-8.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-8.jpg 1x, ./img/avatar-8@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Elena Mishel</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold py-3
+                    pt-1">Hope you appreciate that!</p>
+                  </div>
+                  <div class="left__item-pin">
+                    <span class="left__item-time d-block">Fri</span>
+                  </div>
+                </div>
+              </li>
+              <li class="left__item m-0 d-flex justify-content-start align-center pt-2 bg-light">
+                <img class="left__item-img rounded-circle" src="./img/avatar-9.jpg" alt="Baikal" width="50" height="50" srcset="./img/avatar-9.jpg 1x, ./img/avatar-9@2x.jpg 2x">
+                <div class="left__item-right d-flex justify-content-between py-1 border-bottom">
+                  <div class="left__item-content mx-2">
+                    <p class="left__item-group m-0">Daria Sobinova</p>
+                    <p class="left__item-message m-0 text-secondary fw-bold py-3 pt-1">Yeah, I think so…</p>
+                  </div>
+                  <div class="left__item-pin">
+                    <span class="left__item-time d-block">Fri</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+          <!-- ==================== /LEFT ==================== -->
+
+          <!-- ==================== CENTER ==================== -->
+          <div class="center col-12 col-md-8 col-lg-6 p-0 m-0">
+            <ul class="center__list list-unstyled">
+              <li class="center__item d-flex align-items-start mt-2">
+                <img src="./img/dima.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/dima.jpg 1x, ./img/dima@2x.jpg 2x">
+                <div class="center__item-content col-11 mx-2 ">
+                  <p class="center__item-name fw-bold d-flex justify-content-between m-0">Dmitriy
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                  <p class="center__item-text m-0  my-3 mt-0">Has come, walking</p>
+                  <p class="center__item-text m-0 d-flex justify-content-between">Get ready
+                    <span class="center__item-text--time text-secondary">Fri</span>
+                  </p>
+                </div>
+              </li>
+              <li class="center__item d-flex align-items-start mt-2">
+                <img src="./img/avatar-3.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/avatar-3.jpg 1x, ./img/avatar-3@2x.jpg 2x">
+                <div class="center__item-content col-11 mx-2 ">
+                  <p class="center__item-name fw-bold d-flex justify-content-between m-0">Evgenia
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                  <p class="center__item-text m-0  my-3 mt-0">Yeah!</p>
+                  <p class="center__item-text m-0 d-flex justify-content-between">I’m ready, waiting.
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                </div>
+              </li>
+              <li class="center__item d-flex align-items-start mt-2">
+                <img src="./img/dima.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/dima.jpg 1x, ./img/dima@2x.jpg 2x">
+                <div class="center__item-content col-11 mx-2 ">
+                  <p class="center__item-name fw-bold d-flex justify-content-between m-0">Dmitriy
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                  <p class="center__item-text m-0  my-3 mt-0">Already here.</p>
+                </div>
+              </li>
+              <li class="center__item d-flex align-items-start mt-2">
+                <img src="./img/dima.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/dima.jpg 1x, ./img/dima@2x.jpg 2x">
+                <div class="center__item-content col-11 mx-2 ">
+                  <p class="center__item-name fw-bold d-flex justify-content-between m-0">Dmitriy
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                  <a class="center__item-link text-decoration-none" href="#">https://www.behance.net/gallery/4062</a>
+                  <div class="center__item-bottom px-2">
+                    <p class="center__bottom-title m-0">Behance</p>
+                    <p class="center__bottom-subtitle m-0">Still Optimist</p>
+                    <p class="center__bottom-text m-0 my-2 mt-0">Pony Mtl and Sid Lee Collective</p>
+                    <img class="center__bottom-img" src="./img/img-1.jpg" alt="img" width="60" height="60" srcset="./img/img-1.jpg 1x, ./img/img-1@2x.jpg 2x">
+                  </div>
+                </div>
+              </li>
+              <li class="center__item d-flex align-items-start mt-2">
+                <img src="./img/dima.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/dima.jpg 1x, ./img/dima@2x.jpg 2x">
+                <div class="center__item-content col-11 mx-2 ">
+                  <p class="center__item-name fw-bold d-flex justify-content-between m-0">Dmitriy
+                    <span class="center__item-name--time text-secondary fw-normal">Fri</span>
+                  </p>
+                  <a class="center__item-link text-decoration-none" href="#">https://www.behance.net/gallery/4062</a>
+                  <div class="center__item-bottom px-2">
+                    <p class="center__bottom-title m-0">Abduzeedo</p>
+                  <div class="d-flex">
+                    <div>
+                      <p class="center__bottom-subtitle m-0">Unique Pop Fine Art by Limpfish</p>
+                      <p class="center__bottom-text m-0 my-2 mt-0">It’s always a great day when you find a real slick set of works like these by artist David Barton, aka Limpfish.</p>
+                    </div>
+                      <img class="center__bottom-img" src="./img/img-2.jpg" alt="img" width="60" height="60" srcset="./img/img-2.jpg 1x, ./img/img-2@2x.jpg 2x">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="center__item">
+                <p class="center__item-day text-center text-secondary">04 February</p>
+                <div class="d-flex align-items-start mt-2">
+                  <img src="./img/dima.jpg" alt="Dmitriy" width="36" height="36" srcset="./img/dima.jpg 1x, ./img/dima@2x.jpg 2x">
+                  <div class="center__item-content col-11 mx-2 ">
+                    <p class="center__item-name fw-bold d-flex justify-content-between m-0">Dmitriy
+                      <span class="center__item-name--time text-secondary fw-normal">9:35  AM</span>
+                    </p>
+                    <a class="center__item-link text-decoration-none" href="#">https://www.behance.net/gallery/4062</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            </div>
+          <!-- ==================== /CENTER ==================== -->
+
+          <!-- ==================== RIGHT ==================== -->
+          <div class="right d-none d-md-block col-4 col-lg-3 border-start">
+            <div class="right__top d-flex justify-content-between align-items-center py-2 border-bottom">
+              <p class="right__top-text fw-bold m-0">Recent</p>
+              <a class="right__top-link fw-bold text-decoration-none" href="#">Stickers & GIFs</a>
+            </div>
+            <p class="right__stickers">
+              😁 😂 🤣 😃 😄 😅 😆 😉 😊 😋 😎 😍 😘 🥰 😗 😙 😚 🙂 🤗 🤩 🤔 🤨 😐 😑 😶 🙄 😏 😣 😥 😮 🤐 😯 😪 😫 🥱 😴 😌 😛 😜 😝 🤤  😒 😓 😔 😕 🙃 🤑 😲 ☹ 🙁 😖 😞 😟 😤 😢 😭 😦 😧 😨 😩 🤯 😬 😰 😱 🥵 🥶 😳 😵 🤪 🥴 😠 😡 🤬 😷 🤒 🤕🤢 🤮 🤧 😇 🥳 🥺 🤠 🤡 🤥 🤫 🤭 🧐 🤓 😈 👿 👹 👺 💀 ☠ 👻 👽 👾 🤖 💩 😺 😸
+            </p>
+            <p class="right__text fw-bold m-0 mb-2">Smileys & People</p>
+            <p class="right__stickers">
+              😁 😂 🤣 😃 😄 😅 😆 😉 😊 😋 😎 😍 😘 🥰 😗 😙 😚 🙂 🤗 🤩 🤔 🤨 😐 😑 😶 🙄 😏 😣 😥 😮 🤐 😯 😪 😫 🥱 😴 😌 😛 😜 😝 🤤  😒 😓 😔 😕 🙃 🤑 😲 ☹ 🙁 😖 😞 😟 😤 😢 😭 😦 😧 😨 😩 🤯 😬 😰 😱 🥵 🥶 😳 😵 🤪 🥴 😠 😡 🤬 😷 🤒 
+            </p>
+          </div>
+          <!-- ==================== /RIGHT ==================== -->
+          <!-- ==================== BOTTOM ==================== -->
+          <div class="bottom border-bottom row m-0 p-0">
+            <ul class="left__bottom-list list-unstyled d-none d-xl-flex col-4 justify-content-around border-top border-start py-3 bg-white">
+              <li class="left__bottom-item">
+                <a  class="left__bottom-link" href="#" class="left__bottom-link">
+                  <img class="left__bottom-img" src="./img/profile.png" alt="profile" width="25" height="25">
+                </a>
+              </li>
+              <li class="left__bottom-item">
+                <a  class="left__bottom-link" href="#" class="left__bottom-link">
+                  <img class="left__bottom-img" src="./img/chat.png" alt="chat" width="29" height="24">
+                </a>
+              </li>
+              <li class="left__bottom-item">
+                <a  class="left__bottom-link" href="#" class="left__bottom-link">
+                  <img class="left__bottom-img" src="./img/settings.png" alt="settings" width="27" height="27">
+                </a>
+              </li>
+            </ul>
+            <div class="center__write d-flex align-items-center gap-4 py-3 bg-white border-top border-end border-start col-12 col-md-8 col-lg-6">
+              <img class="center__write-img" src="./img/more.png" alt="more" width="17" height="19">
+              <input class="center__write-input form-control border-0" type="text" placeholder="Write a message...">
+              <img class="center__write-img" src="./img/smile.png" alt="more" width="21" height="21">
+              <img class="center__write-img" src="./img/voice-chat.png" alt="voice" width="15" height="23">
+            </div>
+            <ul class="right__bottom-list list-unstyled d-none d-md-flex col-4 col-lg-3  justify-content-around border-top border-start border-end py-3 px-0 m-0 bg-white">
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/time.svg" alt="profile" width="20" height="20">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/smile.svg" alt="chat" width="19" height="19">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/cat.svg" alt="settings" width="25" height="20">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/food.svg" alt="profile" width="26" height="20">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/ball.svg" alt="chat" width="20" height="20">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/car.svg" alt="settings" width="24" height="18">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/bulb.svg" alt="profile" width="15" height="21">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/shapes.svg" alt="chat" width="20" height="19">
+                </a>
+              </li>
+              <li class="right__bottom-item">
+                <a  class="right__bottom-link" href="#" class="right__bottom-link">
+                  <img class="right__bottom-img" src="./img/flag.svg" alt="settings" width="14" height="19">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- ==================== /BOTTOM ==================== -->
+        </div>
+          
+      </div>
+    </div>
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
