@@ -36,7 +36,7 @@ body {
   z-index: 10;
 }
 .header__input {
-  width: 224px;
+  width: 220px;
   font-size: 12px;
   background-color: #F4F4F4;
   border-radius: 8px;
@@ -55,6 +55,7 @@ body {
 .left__item {
   width: 100%;
   padding-left: 10px;
+  cursor: pointer;
 }
 .bg-blue {
   background-color: #4C91C7;
